@@ -1,9 +1,17 @@
 body{
      background:#0f172a;
-     width:100%
+     width:100%;
      max-width:1200px;
      margin:0 auto;
      min-height:100vh;
+}
+
+h1{
+     text-font:2rem;
+     text-weight:700;
+     margin-bottom:20px;
+     color:rgba(178 172 190 1);
+     
 }
 
 .designs{
