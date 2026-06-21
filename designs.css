@@ -1,9 +1,17 @@
 body{
      background:#0f172a;
      width:100%
+     max-width:12oopx;
+     margin:0 auto;
      min-height:100vh;
 }
 
 .designs{
-  width
+  width:100%;
+  display:flex;
+}
+.images-card{
+  border: 1px solid rgba(173 162 212 .6); 
+  
+     
 }
