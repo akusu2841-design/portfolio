@@ -4,39 +4,24 @@ body{
      max-width:1200px;
      margin:0 auto;
      min-height:100vh;
-}
+   }
 
-.graphics h1{
-     text-font:2rem;
-     text-weight:700;
-     text-align:center;
-     margin-bottom:20px;
-     color:rgba(178 172 190 1);
+.images-card{
+  display:grid;
+  grid-template-columns:
+      repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+}
      
-}
-
-.designs{
+.images-card img{
   width:100%;
+  border-radius:15px;
+  transition:.3s ease;
+  cursor:pointer;
 }
-.images-card ul{
-  display:flex;
-  border: 1px solid rgba(173 162 212 .6);
-  max-width:300px
-  height:auto;
-  border-radius:25px;
-  padding:20px;
-  transition:0.3s ease;
-  overflow:hidden;
-
-.images-card:hover{
-  transform:scale(1.05) translateY(-5xpx);
-  box-shadow:0 8px 20px rgba(0,0,0,0.15);
-  opacity:0.9;
-  filter:brightness(1.1);
+.images-card img:hover{
+  transform:scale(1.05);
 }
-     
-
-
 
 
 
