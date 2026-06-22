@@ -1,35 +1,99 @@
+/* ================= BODY ================= */
+
 body{
-     background:#0f172a;
-     width:100%;
-     max-width:1200px;
-     margin:0 auto;
-     min-height:100vh;
-   }
+    background:#0f172a;
+    color:white;
 
+    width:100%;
+    max-width:1200px;
+    min-height:100vh;
 
-  .designs h1{
-     font-size:2rem;
-     font-weight:700;
-     font-align:center;
-  }
+    margin:0 auto;
+    padding:40px 20px;
 
+    font-family:Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.graphics{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.graphics h1{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.graphics p{
+    color:#94a3b8;
+    font-size:1rem;
+}
+
+/* ================= SECTION ================= */
+
+.designs{
+    margin-bottom:50px;
+}
+
+/* ================= IMAGE GRID ================= */
 
 .images-card{
-  display:grid;
-  grid-template-columns:
-      repeat(auto-fit, minmax(250px, 1fr));
-  gap:20px;
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap:25px;
 }
-     
+
+/* ================= IMAGES ================= */
+
 .images-card img{
-  width:100%;
-  border-radius:15px;
-  transition:.3s ease;
-  cursor:pointer;
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.35);
 }
+
+/* ================= HOVER ================= */
+
 .images-card img:hover{
-  transform:scale(1.05);
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.5);
 }
 
+/* ================= MOBILE ================= */
 
+@media(max-width:768px){
 
+    body{
+        padding:30px 15px;
+    }
+
+    .graphics h1{
+        font-size:2rem;
+    }
+
+    .images-card{
+        gap:20px;
+    }
+}
