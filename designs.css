@@ -6,6 +6,14 @@ body{
      min-height:100vh;
    }
 
+
+  .designs h1{
+     font-size:2rem;
+     font-weight:700;
+     font-align:center;
+  }
+
+
 .images-card{
   display:grid;
   grid-template-columns:
