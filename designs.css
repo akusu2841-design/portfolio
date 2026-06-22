@@ -6,7 +6,7 @@ body{
      min-height:100vh;
 }
 
-h1{
+.graphics h1{
      text-font:2rem;
      text-weight:700;
      text-align:center;
