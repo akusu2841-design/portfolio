@@ -17,11 +17,10 @@ h1{
 
 .designs{
   width:100%;
-  display:flex;
 }
-.images-card{
-  border: 1px solid rgba(173 162 212 .6); 
-  width:100%;
+.images-card ul{
+  display:flex;
+  border: 1px solid rgba(173 162 212 .6);
   max-width:300px
   height:auto;
   border-radius:25px;
