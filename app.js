@@ -17,13 +17,15 @@ if (menuBtn && menu) {
   });
 }
 
-//Redirect buttons
-const btn = document.querySelectorAll(".vBtn");
-btn.addEventListenerforEach(btn => {
-    btn.addEventListener("click", () => {
-        window.location.href = "button.dataset.url";
-    });
+// Redirect Buttons
+const buttons = document.querySelectorAll(".vBtn");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    window.location.href = button.dataset.url;
+  });
 });
+
 // Wait until page loads
 document.addEventListener("DOMContentLoaded", () => {
 
